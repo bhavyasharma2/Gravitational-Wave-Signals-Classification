@@ -9,7 +9,7 @@
 
 ## Introduction
 
-This project aims to enhance the classification accuracy of glitches in gravitational wave signals in LIGO data by leveraging advanced deep learning models. Through a comprehensive literature review on Gravity Spy research, which consisted of implementation of multi-view fusion techniques, attention modules, and label smoothing, various convolutional nueral network archiectures were implemented and evaluated in this project including VGG16, VGG19, and MobileNet.
+This project aims to enhance the classification accuracy of glitches in gravitational wave signals in LIGO data by leveraging advanced deep learning models. Conducted as part of an ML research internship at Spartificial, the project involved a comprehensive literature review on Gravity Spy research (which consisted of implementation of multi-view fusion techniques, attention modules, and label smoothing) and the implementation and evaluation of VGG16, VGG19, and MobileNet architectures.
 
 ## Dataset
 
