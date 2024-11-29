@@ -28,8 +28,8 @@ The dataset should be organized into subdirectories for each class.
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/bhavyasharma2/Gravitational-Wave-Signals-Classification.git
+    cd Gravitational-Wave-Signals-Classification
     ```
 
 2. **Install the required packages**:
