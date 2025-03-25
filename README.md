@@ -6,6 +6,9 @@ This project focuses on improving the classification accuracy of glitches in gra
 
 ## Dataset
 
+This notebook uses the **Gravity Spy Gravitational Waves** dataset from Kaggle.  
+Dataset link: [Gravity Spy Gravitational Waves](https://www.kaggle.com/datasets/gravity-spy-gravitational-waves)
+
 - **Training and Validation Dataset**: Custom dataset with categorized spectrogram images of gravitational wave glitches.
 - **Test Dataset**: A separate test set.
 - **Organization**: The dataset is structured into subdirectories, each corresponding to a different glitch class (22 classes in total).
