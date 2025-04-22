@@ -4,10 +4,63 @@
 
 This project focuses on improving the classification accuracy of glitches in gravitational wave signals from LIGO data using deep learning models. Conducted as part of an ML research internship at Spartificial, the project builds upon prior research from the Gravity Spy initiative. We evaluated the effectiveness of label smoothing, attention modules, and different deep learning architectures, including VGG16, VGG19, and MobileNet.
 
+## Setup Instructions
+
+To set up your development environment and run this project locally, follow the steps below:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/bhavyasharma2/Gravitational-Wave-Signals-Classification.git
+   cd Gravitational-Wave-Signals-Classification
+   ```
+
+2. **Download the Dataset:**
+   - Go to the Kaggle dataset page: [Gravity Spy Gravitational Waves Dataset](https://www.kaggle.com/datasets/tentotheminus9/gravity-spy-gravitational-waves).
+   - - Click on the "Download" button to get the dataset as a `.zip` file.
+   - Visit [this link](https://zenodo.org/records/5649212) and download `L1_O3b.csv`. 
+
+3. **Extract the Dataset:**
+   - After downloading, extract the contents of the `.zip` file.
+
+4. **Place the Dataset in the Project:**
+   - Move the extracted folder and `L1_O3b.csv` file into the `data/` directory in the project root.
+
+5. **Create and Activate a Virtual Environment:**
+   - **For Windows:**
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   - **For macOS/Linux:**
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+
+6. **Install the Required Dependencies:**
+   - Upgrade pip:
+     ```bash
+     pip install --upgrade pip
+     ```
+   - Install dependencies from `requirements.txt`:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+7. **Run the Project:**
+   - Make sure the dataset is extracted in the correct directory (`data/gravitational_waves_dataset`).
+   - Then run:
+     ```bash
+     python MobileNet_Model.py
+     python VGG_Models.py
+     ```
+
+
 ## Dataset
 
-This notebook uses the **Gravity Spy Gravitational Waves** dataset from Kaggle.  
-Dataset link: [Gravity Spy Gravitational Waves](https://www.kaggle.com/datasets/gravity-spy-gravitational-waves)
+This notebook uses the **Gravity Spy Gravitational Waves** dataset from Kaggle and **L1_O3b** data from Zenodo records. To replicate this project, please follow the steps below to download and set up the dataset:
+
+The dataset contains the following:
 
 - **Training and Validation Dataset**: Custom dataset with categorized spectrogram images of gravitational wave glitches.
 - **Test Dataset**: A separate test set.
@@ -42,19 +95,6 @@ Through extensive experimentation, we observed the following:
 - **MobileNet with Label Smoothing (without Attention & Multi-view Fusion)**: Outperformed other models with an accuracy of 89%, making it the most effective solution for this classification task.
 
 These results underscore the effectiveness of preprocessing techniques like label smoothing in improving classification accuracy. The Gravity Spy dataset, comprising 22 glitch categories, provided a comprehensive evaluation platform for the models.
-
-## Installation
-
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/bhavyasharma2/Gravitational-Wave-Signals-Classification.git
-    cd Gravitational-Wave-Signals-Classification
-    ```
-
-2. **Install the required packages**:
-    ```sh
-    pip install -r requirements.txt
-    ```
 
 ## Acknowledgements
 
